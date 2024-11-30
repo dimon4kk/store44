@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Air Force</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="back-link">← Назад до каталогу</a>
+    </div>
+  </header>
+
+  <section class="product-details">
+    <div class="details-container">
+      <div class="gallery">
+        <img id="main-image" src="sneaker2_1.jpg" alt="Nike Air Force">
+        <div class="thumbnail-container">
+          <img src="sneaker2_1.jpg" alt="Nike Air Force" onclick="changeImage('sneaker2_1.jpg')">
+          <img src="sneaker2_2.jpg" alt="Nike Air Force" onclick="changeImage('sneaker2_2.jpg')">
+          <img src="sneaker2_3.jpg" alt="Nike Air Force" onclick="changeImage('sneaker2_3.jpg')">
+        </div>
+      </div>
+      <div class="product-info">
+        <h1>Nike Air Force</h1>
+        <p>Ціна: 3099 грн</p>
+        <p><strong>Характеристики:</strong></p>
+        <ul>
+          <li>Розміри: 40, 41, 42, 43, 44</li>
+          <li>Матеріал: Замша</li>
+          <li>Колір: Чорний</li>
+        </ul>
+        <button class="btn-primary">Купити</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function changeImage(imageSrc) {
+      document.getElementById('main-image').src = imageSrc;
+    }
+  </script>
+</body>
+</html>

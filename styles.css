@@ -1,0 +1,255 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Хедер */
+  header {
+    background-color: black;
+    padding: 15px 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 50px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  header nav ul li a:hover {
+    color: #f0c040;
+  }
+  
+  /* Герой-секція */
+  .hero {
+    background-image: url('hero.jpg'); /* Замінити на твоє зображення */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content .btn-primary {
+    background-color: #f0c040;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero-content .btn-primary:hover {
+    background-color: #dba72c;
+  }
+  
+  /* Каталог */
+  .catalog {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .catalog h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-card button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .product-card button:hover {
+    background-color: #f0c040;
+    color: black;
+  }
+  
+  /* Футер */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  
+  /* Сторінка деталей товару */
+.product-details {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .details-container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .gallery {
+    flex: 1;
+  }
+  
+  #main-image {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .thumbnail-container img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .thumbnail-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-info h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .product-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-info ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .back-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  .product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .slider {
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .slider img {
+    width: 100%;
+    display: none;
+  }
+  .slider img:first-child {
+    display: block;
+  }
+  

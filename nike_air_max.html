@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Air Max</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="back-link">← Назад до каталогу</a>
+    </div>
+  </header>
+
+  <section class="product-details">
+    <div class="details-container">
+      <div class="gallery">
+        <img id="main-image" src="sneaker1_1.jpg" alt="Nike Air Max">
+        <div class="thumbnail-container">
+          <img src="sneaker1_1.jpg" alt="Nike Air Max" onclick="changeImage('sneaker1_1.jpg')">
+          <img src="sneaker1_2.jpg" alt="Nike Air Max" onclick="changeImage('sneaker1_2.jpg')">
+          <img src="sneaker1_3.jpg" alt="Nike Air Max" onclick="changeImage('sneaker1_3.jpg')">
+        </div>
+      </div>
+      <div class="product-info">
+        <h1>Nike Air Max</h1>
+        <p>Ціна: 2099 грн</p>
+        <p><strong>Характеристики:</strong></p>
+        <ul>
+          <li>Розміри: 39, 40, 41, 42, 43</li>
+          <li>Матеріал: Шкіра</li>
+          <li>Колір: Білий</li>
+        </ul>
+        <button class="btn-primary">Купити</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function changeImage(imageSrc) {
+      document.getElementById('main-image').src = imageSrc;
+    }
+  </script>
+</body>
+</html>
